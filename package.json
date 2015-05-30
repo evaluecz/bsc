@@ -18,6 +18,7 @@
         "mocha": ""
     },
     "scripts": {
+        "start": "node app.js",
         "test": "echo \"No test specified\" && exit 1"
     },
     "license": "MIT",
