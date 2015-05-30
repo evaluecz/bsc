@@ -1,0 +1,27 @@
+{
+    "name": "bsc-ui",
+    "version": "0.0.1",
+    "homepage": "http://",
+    "description": "Front End developer v BSC, verze pro rok 2015",
+    "authot": "Josef Podany eValue.cz <josef.podany@evalue.cz>",
+    "keywords": [ "nodejs", "angularjs", "bsc", "evalue", "bootstrap" ],
+    "dependencies": {
+        "express": ">= 4.x",
+        "bootstrap": "> 3.x"
+    },
+    "devDependencies": {
+        "mocha": "^2.2.4"
+    },
+    "scripts": {
+        "test": "echo \"No test specified\" && exit 1"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/evaluecz/bsc.git"
+    },
+    "engines": {
+        "node": ">=0.10.1"
+    },
+
+}
