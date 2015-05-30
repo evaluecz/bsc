@@ -11,6 +11,7 @@
     "keywords": [ "nodejs", "angularjs", "bsc", "evalue", "bootstrap" ],
     "dependencies": {
         "express": "",
+        "ect": "",
         "bootstrap": "",
         "angular": ""
     },
