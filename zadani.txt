@@ -1,4 +1,6 @@
- Připravte jednoduchou aplikaci v AngularJs tak, aby se dala po naklonování repository a s nainstalovaným node.js nainstalovat a spustit.
+
+Připravte jednoduchou aplikaci v AngularJs tak, aby se dala po naklonování
+repository a s nainstalovaným node.js nainstalovat a spustit.
  
 Předpřipravený server BSC s REST API, které bude aplikace používat:
 Root URL: http://private-9aad-note10.apiary-mock.com/
@@ -10,16 +12,20 @@ PUT /notes/{id}
 DELETE /notes/{id}
  
 Funkčni požadavky:
-Po instalaci a spuštění se po zadání localhost:9000 objeví stránka se seznamem s poznámkami.
-Je možné zobrazit detail, editovat, smazat a vytvořit novou poznámku. (Mock bude vracet stále stejná data, předmětem úkolu je volat správné metody)
+Po instalaci a spuštění se po zadání localhost:9000 objeví stránka se seznamem
+s poznámkami. Je možné zobrazit detail, editovat, smazat a vytvořit novou
+poznámku. (Mock bude vracet stále stejná data, předmětem úkolu je volat správné
+metody)
 V aplikaci bude možné měnit EN/CZ jazyk.
- 
+
 Nefunkční požadavky:
 GUI dle vlastního návrhu, použití Bootstrapu a LESS/SASS/Stylus preferováno.
 Build pomoci gulp.
 Tamplaty v js.
 Použít ui-router.
 Alespoň jeden základní protractor test.
- 
-Kod vyvíjejte do github/bitbucket veřejného repository, v README instrukce pro instalaci a spuštění aplikace a testu, a pošlete URL emailem na vaclav.matouch@bsc-ideas.com.
+
+Kod vyvíjejte do github/bitbucket veřejného repository, v README instrukce pro
+instalaci a spuštění aplikace a testu, a pošlete URL emailem na
+vaclav.matouch@bsc-ideas.com.
 

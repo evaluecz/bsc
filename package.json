@@ -11,9 +11,7 @@
     "keywords": [ "nodejs", "angularjs", "bsc", "evalue", "bootstrap" ],
     "dependencies": {
         "express": "",
-        "ect": "",
-        "bootstrap": "",
-        "angular": ""
+        "ejs": ""
     },
     "devDependencies": {
         "mocha": ""
@@ -30,5 +28,4 @@
     "engines": {
         "node": ">=0.10.1"
     }
-
 }
