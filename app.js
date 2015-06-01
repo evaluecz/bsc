@@ -13,6 +13,11 @@ app.get('/', function(req, res) {
     res.render('pages/index');
 });
 
+// nova poznamka 
+app.get('/nova-poznamka', function(req, res) {
+    res.render('pages/nova-poznamka.ejs');
+});
+
 var server = app.listen(port, function () {
 
     var host = server.address().address;
