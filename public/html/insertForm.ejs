@@ -1,0 +1,23 @@
+<div ng-show="lang=='cz'">
+<a ui-sref="/" class="btn btn-primary"><span class="glyphicon glyphicon-list"></span>&nbsp;Seznam poznámek</a>
+<h1>Nová poznámka</h1>
+<form role="form">
+    <div class="form-group">
+        <input ng-model="title" type="text" class="form-control" id="title" name="title">
+    </div>
+    <a ng-click="insertNote(title)" class="btn btn-primary"><span class="glyphicon glyphicon-saved"></span>&nbsp;Přidat poznámku</a>
+</form>
+
+</div>
+
+
+<div ng-show="lang=='en'">
+<a ui-sref="/" class="btn btn-primary"><span class="glyphicon glyphicon-list"></span>&nbsp;List of notes</a>
+<h1>Add note</h1>
+<form role="form">
+    <div class="form-group">
+        <input ng-model="title" type="text" class="form-control" id="title" name="title">
+    </div>
+    <a ng-click="insertNote(title)" class="btn btn-primary"><span class="glyphicon glyphicon-saved"></span>&nbsp;Insert note</a
+</form>
+</div>

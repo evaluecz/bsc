@@ -1,72 +1,17 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="cz" ng-app="app">
 
 <head>
     <% include ../partials/head %>
 </head>
 
-<body>
+<body ng-controller="ctrl">
 
-    <% include ../partials/header %>
+<% include ../partials/navigace %>
+<div class='container'>
 
-    <div class='container'>
-        
-    <h1>Poznámky</h1>
-    <div class="panel-group" id="accordion">
+<div ui-view></div>  
+</div><!-- container -->
 
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Prvni poznamka</a></h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Tohle je test prvni poznamky.
-                    <p>
-                    <br/>
-                    <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-edit"></span>&nbsp;Opravit</button>
-                    <button type="button" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;Smazat</button>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Nejaka druha poznamka</a></h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Nejaky dali text k druhe poznamce.
-                    <p>
-                    <br/>
-                    <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-edit"></span>&nbsp;Opravit</button>
-                    <button type="button" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;Smazat</button>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Posledni poznamka</a></h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Text upkne na konci.
-                    <p>
-                    <br/>
-                    <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-edit"></span>&nbsp;Opravit</button>
-                    <button type="button" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;Smazat</button>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <% include ../partials/footer %>
-
-    </div><!-- container -->
-    
 </body>
 </html>

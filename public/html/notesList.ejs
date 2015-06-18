@@ -1,0 +1,41 @@
+<div ng-show="lang=='cz'">
+<a class="btn btn-primary" ui-sref="insertNote"><span class="glyphicon glyphicon-plus"></span>&nbsp;Přidat novou poznámku</a>
+<h1>Seznam poznámek</h1>
+<table class="table table-hover">
+    <thead>
+        <tr><th>ID</th><th>Poznámka</th><th>Akce</th></tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="note in notes">
+            <td class="col-md-1 note">{{ note.id }}</td>
+            <td>{{ note.title }}</td>
+            <td class="col-md-3">
+                <a ui-sref="editNote({id: note.id, title: note.title})" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-edit"></span>&nbsp;Opravit</a>
+                <a ng-click="deleteNote(note.id)"  class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;Smazat</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div><!-- cz -->
+
+
+<div ng-show="lang=='en'">
+<a class="btn btn-primary" ui-sref="insertNote({lang: 'en'})"><span class="glyphicon glyphicon-plus"></span>&nbsp;Add new note</a>
+<h1>List of notes</h1>
+<table class="table table-hover">
+    <thead>
+        <tr><th>ID</th><th>Note</th><th>Actions</th></tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="note in notes">
+            <td class="col-md-1 note">{{ note.id }}</td>
+            <td>{{ note.title }}</td>
+            <td class="col-md-3">
+                <a ui-sref="editNote({id: note.id, title: note.title})" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-edit"></span>&nbsp;Edit</a>
+                <a ng-click="deleteNote(note.id)"  class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;Delete</a>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div><!-- en -->
+

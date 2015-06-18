@@ -11,7 +11,9 @@
     "keywords": [ "nodejs", "angularjs", "bsc", "evalue", "bootstrap" ],
     "dependencies": {
         "express": "",
-        "ejs": ""
+        "ejs": "",
+        "body-parser": "",
+        "protractor": ""
     },
     "devDependencies": {
         "mocha": ""
