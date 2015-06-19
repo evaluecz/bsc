@@ -18,6 +18,7 @@ var notes = [
     { id: 1, title: "Prvni poznamka"},
     { id: 2, title: "Dalsi poznamka"},
 ];
+var nextId = notes.length + 1;
 
 // Implementace REST API
 // GET /notes 
@@ -48,9 +49,6 @@ app.delete("/notes/:id", function(req, res){
         if(notes[i].id == req.params.id){
             notes.splice(i, 1);
             res.sendStatus(204);
-            for(var i=0; i < notes.length; i++){
-                notes[i].id = i+1;
-            }
         }
     }
     res.sendStatus(404);
@@ -59,7 +57,7 @@ app.delete("/notes/:id", function(req, res){
 // POST /notes
 app.post("/notes", function(req, res){
     var note = {};
-    note.id = notes.length + 1;
+    note.id = nextId++;
     note.title = req.body.title;
     notes.push(note);
     res.sendStatus(201);
