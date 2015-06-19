@@ -11,7 +11,7 @@
             <td>{{ note.title }}</td>
             <td class="col-md-3">
                 <a ui-sref="editNote({id: note.id, title: note.title})" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-edit"></span>&nbsp;Opravit</a>
-                <a ng-click="deleteNote(note.id)"  class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;Smazat</a>
+                <a ng-confirm-click="Jseš si jistý?" ng-click="deleteNote(note.id)" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;Smazat</a>
             </td>
         </tr>
     </tbody>
@@ -32,10 +32,13 @@
             <td>{{ note.title }}</td>
             <td class="col-md-3">
                 <a ui-sref="editNote({id: note.id, title: note.title})" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-edit"></span>&nbsp;Edit</a>
-                <a ng-click="deleteNote(note.id)"  class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;Delete</a>
+                <a ng-confirm-click="Are you sure?" ng-click="deleteNote(note.id)"  class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span>&nbsp;Delete</a>
             </td>
         </tr>
     </tbody>
     </table>
 </div><!-- en -->
 
+<!--
+ng-click="deleteNote(note.id)"
+-->

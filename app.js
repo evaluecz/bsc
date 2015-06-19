@@ -48,6 +48,9 @@ app.delete("/notes/:id", function(req, res){
         if(notes[i].id == req.params.id){
             notes.splice(i, 1);
             res.sendStatus(204);
+            for(var i=0; i < notes.length; i++){
+                notes[i].id = i+1;
+            }
         }
     }
     res.sendStatus(404);
