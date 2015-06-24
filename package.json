@@ -20,7 +20,7 @@
     },
     "scripts": {
         "start": "node app.js",
-        "test": "echo \"No test specified\" && exit 1"
+        "test": "protractor test/protractor-cfg.js"
     },
     "license": "MIT",
     "repository": {
