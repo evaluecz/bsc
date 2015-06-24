@@ -9,7 +9,7 @@ Front End developer v BSC, verze pro rok 2015
 
 # Spuštění aplikace
 `npm start app.js`<br/>
-Aplikace pak běží na <a href='http://localhost:9000' target='_blank'>http://localhost:900</a>
+Aplikace pak běží na <a href='http://localhost:9000' target='_blank'>http://localhost:9000</a>
 
 # Protractor test
 V adresáři `test`<br/>
