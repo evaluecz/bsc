@@ -9,6 +9,7 @@ Front End developer v BSC, verze pro rok 2015
 
 # Spuštění aplikace
 `npm start app.js`
+Aplikace pak běží na http://localhost:900
 
 # Protractor test
 V adresáři `test`<br/>
