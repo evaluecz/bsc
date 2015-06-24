@@ -10,5 +10,6 @@ Front End developer v BSC, verze pro rok 2015
 # Spuštění aplikace
 `npm start app.js`
 
-# Protractro test
+# Protractor test
 V adresáři `test`<br/>
+`protractor test/protractor-cfg.js`
